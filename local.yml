@@ -22,7 +22,7 @@
     become_user: mulix
     dconf:
       key: "/org/gnome/desktop/picture-uri"
-      value: "'file:///usr/share/background/ansible-wallpaper.png'"
+      value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
 
   - name: set wallpaper position
     become_user: mulix
