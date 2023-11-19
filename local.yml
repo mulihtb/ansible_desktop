@@ -30,6 +30,12 @@
       key: "/org/gnome/desktop/background/picture-options"    
       value: "'zoom'"  
 
+  - name: .bashrc file
+    copy:
+      src: files/bashrc
+      dest: /home/mulix/.bashrc
+      owner: mulix
+      group: mulix
 
 
 
