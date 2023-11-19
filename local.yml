@@ -14,14 +14,14 @@
   - name: copy wallpaper file
     copy:
       src: files/wallpaper.png
-      dest: /usr/share/background/ansible-wallpaper.png
+      dest: /usr/share/backgrounds/ansible-wallpaper.png
       owner: root
       group: root
 
   - name: set wallpaper
     become_user: mulix
     dconf:
-      key: "/org/gnome/desktop/picture-uri"
+      key: "/org/gnome/desktop/background/picture-uri"
       value: "'file:///usr/share/backgrounds/ansible-wallpaper.png'"
 
   - name: set wallpaper position
