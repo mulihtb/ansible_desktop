@@ -25,9 +25,9 @@
   - name: copy .bashrc file
     copy:
       src: files/bashrc
-      dest: ansible_env.HOME
-        # owner: mulix
-        #group: mulix
+      dest: /home/mulix/.bashrc
+      owner: mulix
+      group: mulix
 
   - name: add ansible user
     user:
