@@ -19,7 +19,8 @@
     copy:
       src: files/tmux.conf
       dest: ansible_env.HOME 
-      
+      owner: root
+      group: root 
   
   - name: copy .bashrc file
     copy:
