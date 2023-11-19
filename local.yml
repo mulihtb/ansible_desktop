@@ -18,7 +18,7 @@
   - name: "copying tmux"
     copy:
       src: files/tmux.conf
-      dest: ansible_env.HOME 
+      dest: /home/mulix/.tmux.conf 
 
 
   
