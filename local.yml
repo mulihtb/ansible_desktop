@@ -10,6 +10,17 @@
         - htop 
         - tmux
         - vim-nox
+        - git
+        - ansible
+        - python3-psutil
+        - dconf-cli
+         
+  - name: copy .tmux.conf file
+    copy:
+      src: files/tmux.conf
+      dest: /home/mulix/.tmux.conf
+      owner: mulix
+      group: mulix
   
   - name: copy .bashrc file
     copy:
