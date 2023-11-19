@@ -18,7 +18,7 @@
   - name: copy .tmux.conf file
     copy:
       src: files/tmux.conf
-      dest: ansible_env.HOME 
+      dest: ansible_env.USER 
       owner: mulix
       group: mulix
   
