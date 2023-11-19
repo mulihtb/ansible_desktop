@@ -15,12 +15,11 @@
         - python3-psutil
         - dconf-cli
          
-  - name: copy .tmux.conf file
+  - name: "copying tmux"
     copy:
       src: files/tmux.conf
       dest: ansible_env.USER 
-      owner: mulix
-      group: mulix
+      
   
   - name: copy .bashrc file
     copy:
